@@ -1,20 +1,74 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Panchangam Pro Calculator
 
-# Run and deploy your AI Studio app
+A precise Vedic Panchang calculator built with React + TypeScript + Vite.  
+This application computes core Panchang elements using astronomical coordinates and ecliptic longitude calculations.
 
-This contains everything you need to run your app locally.
+## 🔭 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/13YQny8-d0OIC4DrM-ZdbbHTNPQ6YjidE
+- 📍 GPS-based location detection with manual override
+- 📅 Date & time based Panchang calculation
+- 🌙 Tithi, Nakshatra, Yoga, Vara
+- ♈ Sun & Moon Rashi
+- ⏱ Sunrise, Sunset, Moonrise, Moonset
+- 🌗 Moon phase detection
+- 🌐 Multilingual support (English / Hindi / Marathi)
+- 🌙 Dark / Light theme
+- 📄 PDF export support
+- ⚡ Fast Vite-powered UI
 
-## Run Locally
+## 🧮 Calculation Method
 
-**Prerequisites:**  Node.js
+- Uses astronomical azimuth & altitude data
+- Converts to ecliptic longitude
+- Applies refraction correction
+- Computes Panchang elements using classical angular divisions:
+  - Tithi = 12° Moon–Sun separation
+  - Nakshatra = 13°20′ Moon longitude
+  - Yoga = 13°20′ (Sun + Moon sum)
 
+## 🛠 Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- React
+- TypeScript
+- Vite
+- Tailwind-style utility CSS
+- Astronomy API (ipgeolocation.io)
+- Vercel hosting
+
+## 🚀 Live Demo
+
+Deployed on Vercel:  
+(https://panchangam-pro-calculator.vercel.app/)
+
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
+
+Environment Variable
+Create .env.local:
+VITE_IPGEOLOCATION_API_KEY=your_key_here
+
+Author
+Tejjan Arora
+Shah and Anchor Kutchhi Engineering College
+
+Mentor
+Sarika Rane
+Professor at Shah and Anchor Kutchhi Engineering College
+
+📚 Academic Project
+
+Built as a Vedic astronomy + software engineering project combining astronomical coordinate conversion with traditional Panchang computation.
+
+---
+
+# ✅ Then Commit Update
+
+In VS Code terminal:
+
+```bash
+git add README.md
+git commit -m "Replace README with project documentation"
+git push
