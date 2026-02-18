@@ -1,0 +1,7 @@
+{
+  "name": "Panchangam Pro - Vedic Astrology Calculator",
+  "description": "A comprehensive Vedic calendar (Panchang) tool that calculates Tithi, Nakshatra, Yoga, and Vara based on precise astronomical data. It includes location-based timing for sunrise, sunset, moonrise, and moonset.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
