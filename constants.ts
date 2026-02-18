@@ -150,7 +150,13 @@ export const RASHI_DETAILS = [
   { lord: 'Jupiter', element: 'Water', modality: 'Dvisvabhava (Dual)' }
 ];
 
-export const GEOLOCATION_API_KEY = process.env.IPGEOLOCATION_API_KEY || '6eae1b2688304a9090c94a582245e696';
+export const GEOLOCATION_API_KEY =
+  import.meta.env.VITE_IPGEOLOCATION_API_KEY;
+
+if (!GEOLOCATION_API_KEY) {
+  throw new Error("Missing VITE_IPGEOLOCATION_API_KEY env variable");
+}
+
 export const DEFAULT_LAT = 20.5937;
 export const DEFAULT_LON = 78.9629;
 
